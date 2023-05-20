@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Contest2</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <h1>TimeZone API</h1>
+            <h1>Your Current Time Zone</h1>
+            <section class="innercontainer" id="uppercontainer">
+                <div>name of timezone:</div>
+                <div class="lonspan"><span>lon:</span><span>lat:</span></div>
+                <div>offset std:</div>
+                <div>offset std seconds</div>
+                <div>offset dst:</div>
+                <div>offset dst seconds</div>
+                <div>country</div>
+                <div>postcode</div>
+                <div>city</div>
+            </section>
+        </div>
+
+        <div class="container2"> 
+            <section class="inputcontainer">
+                <lable for="input">
+                    <h1>Enter Address</h1>
+                </lable>
+                <input type="text" placeholder="Address" id="input">
+                <button onclick="getByAddress()">Submit</button>
+            </section>
+
+            <section class="resultcontainer">
+                <h1>Your Result</h1>
+                <section class="result" id="result">
+                    
+                </section>
+            </section>
+        
+            <section class="error">Please enter an address!</section>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
